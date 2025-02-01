@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none
+}
+
+*,
+*:focus {
+    outline: none;
+    -webkit-tap-highlight-color: #fff0
+}
+
+button:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+
+:root {
+
+    /* Colors */
+    --primary-color: #e32425;
+    --secondary-color: #6c757d;
+    --background-color: #dfdfdf47;
+    --text-color: #000000;
+    --white-color: #ffff;
+}
+
+/* Header Css Start*/
+.main-menu {
+    background-color: var(--background-color);
+    padding: 20px 30px !important;
+}
+
+.main-menu .nav-item .nav-link {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.main-menu .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #f5812c;
+    transform: scale(0, 1);
+    transform-origin: center left;
+    transition: transform 0.5s;
+    margin: auto;
+}
+
+.main-menu .nav-item:hover .nav-link::before {
+    transform: scale(1, 1);
+}
+
+.main-menu .nav-item {
+    padding: 10px;
+}
+
+.main-menu .nav-item .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.btn.btn-sucess {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 800;
+    border: 1px solid var(--primary-color);
+}
+
+.btn.btn-sucess:hover {
+    background-color: var(--white-color);
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+}
+
+.menu-rg i {
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.dropdown.hover-menu:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+
+}
+
+.dropdown.hover-menu:hover .dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.main-menu .nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+.main-menu .nav-link i {
+    margin-left: 5px;
+    transition: transform 0.5s ease;
+    font-size: 12px;
+}
+
+.main-menu .nav-item.dropdown:hover .nav-link i {
+    transform: rotate(180deg);
+}
+
+/* End Header Css */
