@@ -32,7 +32,7 @@ button:focus:not(:focus-visible) {
     /* Colors */
     --primary-color: #e32425;
     --secondary-color: #6c757d;
-    --background-color: #dfdfdf47;
+    --background-color: #ffd7da;
     --text-color: #000000;
     --white-color: #ffff;
 }
@@ -41,6 +41,10 @@ button:focus:not(:focus-visible) {
 .main-menu {
     background-color: var(--background-color);
     padding: 20px 30px !important;
+}
+.navbar-light .navbar-brand{
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .main-menu .nav-item .nav-link {
@@ -78,18 +82,18 @@ button:focus:not(:focus-visible) {
 }
 
 .btn.btn-sucess {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    padding: 10px 30px;
+    background-color: transparent;
+    color: #000;
+    padding: 4px 20px;
     font-size: 16px;
     font-weight: 800;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--text-color);
 }
 
 .btn.btn-sucess:hover {
-    background-color: var(--white-color);
+    background-color:  transparent;
     color: var(--text-color);
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--text-color);
 }
 
 .menu-rg i {
@@ -124,38 +128,6 @@ button:focus:not(:focus-visible) {
 .main-menu .nav-item.dropdown:hover .nav-link i {
     transform: rotate(180deg);
 }
-
-/* End Header Css */
-
-
-/* SHIFT */.shift ul li a {
-    position:relative;
-    z-index: 1;
-  }
-.shift ul li a:hover {
-    color: #91640F;
-  }
-.shift ul li a:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 1px;
-    content: '.';
-    color: transparent;
-    background: #F1C40F;
-    visibility: none;
-    opacity: 0;
-    z-index: -1;
-  }
-.shift ul li a:hover:after {
-    opacity: 1;
-    visibility: visible;
-    height: 100%;
-  }
-  
-
+.form-control{
+    width: 160px;
+}
